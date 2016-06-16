@@ -8,7 +8,8 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.3.3');
-  api.use(['ecmascript', 'socialize:messaging', 'socialize:user-model', 'socialize:user-presence', 'reywood:publish-composite']);
+  api.use(['ecmascript']);
+  api.use(['socialize:messaging@0.5.1', 'socialize:user-model@0.1.7', 'socialize:user-presence@0.4.0']);
   api.mainModule("server.js", "server");
   api.mainModule("client.js", "client");
 });
