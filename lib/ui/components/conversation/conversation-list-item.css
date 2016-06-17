@@ -1,0 +1,30 @@
+.active_chat_details {
+	display: inline-block;
+	width: calc(100% - 70px);
+	margin-left: 10px;
+	padding: 10px 0;
+	font-family: 'Open-Sans', sans-serif;
+}
+div#active_chats {
+	display: inline-block;
+	width: 100%;
+}
+.active_chat_details .contact_name {
+
+}
+.active_chat_details .last_message {
+	font-size: 0.75em;
+	color: darkgray;
+}
+
+.contact_thumbnail {
+	width: 50px;
+	height: 50px;
+	float: left;
+	display: inline-block;
+	padding-left: 10px;
+}
+
+.active_chats_card {
+	border-bottom: 1px solid lightgray;
+}

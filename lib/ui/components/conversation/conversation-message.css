@@ -1,0 +1,33 @@
+.chat_bubble {
+	margin: 5px;
+	padding: 10px 10px;
+	max-width: 400px;
+	clear: both;
+}
+
+.sent {
+	float: right;
+}
+
+.sent-styled {
+	border-radius: 16px;
+	background-color: dodgerblue;
+	color: snow;
+	font-weight: 100;
+}
+
+.recieved {
+	float: left;
+}
+
+.recieved-styled {
+	border-radius: 16px;
+	background-color: lightgray;
+	font-weight: 100;
+}
+
+#typing {
+	background-color: lightgray;
+	border-radius: 15px 15px 15px 2px;
+	padding: 5px 10px 2px;
+}

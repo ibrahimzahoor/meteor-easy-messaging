@@ -1,0 +1,34 @@
+#chat_history {
+	display: block;
+	height: calc(100% - 100px);
+	width: 100%;
+	overflow-y: scroll;
+}
+
+#chat_title {
+	box-sizing: border-box;
+	display: block;
+	height: 50px;
+	border-bottom: 1px solid lightgray;
+	text-align: center;
+	overflow: hidden;
+}
+
+#nav {
+	float: left;
+	font-size: 2em;
+	margin: 10px;
+	display: none;
+}
+
+h2 {
+    display: block;
+    margin: auto;
+    padding: 15px;
+}
+
+h2.online::after {
+    bottom: 3px;
+    margin-left: 10px;
+    position: relative;
+}

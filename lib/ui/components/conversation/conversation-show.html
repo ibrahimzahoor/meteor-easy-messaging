@@ -1,0 +1,18 @@
+<template name="ConversationShow">
+
+  <div id="chat_title">
+		<i id="nav" class="fa fa-bars"></i>
+		<h2 class="{{participant.availibilityStatus}}">{{participant.user.username}}</h2>
+	</div>
+
+  <div id="chat_history">
+    {{#if conversationReady}}
+      {{#each message in messages}}
+        {{> ConversationMessage message=message}}
+      {{/each}}
+    {{/if}}
+	</div>
+
+  {{> ConversationReply conversation=conversation}}
+
+</template>
