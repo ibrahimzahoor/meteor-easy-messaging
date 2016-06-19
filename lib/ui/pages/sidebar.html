@@ -1,0 +1,24 @@
+<template name="Sidebar">
+
+  <div id="sidebar" class="sidebar-styled">
+
+    <div id="sidebar_title">
+  		<i class="fa fa-bars" id="nav-sidebar"></i>
+  		<h2>{{> UserMenu}}</h2>
+  	</div>
+
+    <div id="sidebar_content">
+      {{> Template.dynamic (sidebarContentArgs)}}
+  	</div>
+
+    <div id="sidebar_control">
+  		<div id="contacts_controller" class="control {{isActive 'users'}}">
+  			<i class="fa fa-users"></i>
+  		</div>
+  		<div id="active_chats_controller" class="control {{isActive 'conversations'}}">
+  			<i class="fa fa-comments"></i>
+  		</div>
+  	</div>
+
+	</div>
+</template>

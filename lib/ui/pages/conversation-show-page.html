@@ -1,0 +1,7 @@
+<template name="ShowPage">
+  <div id="show-page" class="show-page-styled">
+    {{#if Template.subscriptionsReady}}
+      {{> ConversationShow (conversation)}}
+    {{/if}}
+	</div>
+</template>
