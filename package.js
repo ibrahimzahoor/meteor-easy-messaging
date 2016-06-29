@@ -1,6 +1,6 @@
 Package.describe({
   name: 'ibrahimzahoor:easy-messaging',
-  version: '0.0.2',
+  version: '0.0.3',
   summary: 'Built on socialize packages, provide full messaging kit',
   git: 'https://github.com/ibrahimzahoor/easy-messaging.git',
   documentation: 'README.md'
@@ -14,6 +14,9 @@ Package.onUse(function(api) {
   api.use(['aldeed:simple-schema@1.5.3']);
   api.mainModule('server.js', 'server');
   api.mainModule('client.js', 'client');
+  api.export('Conversation');
+  api.export('User');
+
 });
 
 Package.onTest(function(api) {

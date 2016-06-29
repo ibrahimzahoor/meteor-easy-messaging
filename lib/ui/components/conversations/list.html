@@ -1,16 +1,14 @@
 <template name="ConversationList">
-
   <div id="active_chats">
     {{#if conversationsListReady}}
       {{#each conversationListItem in conversationsList}}
         {{> ConversationListItem conversation = conversationListItem}}
       {{else}}
+        <!-- TODO: making a separate template for dummy content -->
         <div class="wrapper-message">
-          <div class="title-message">No Conversations here</div>
-          <div class="subtitle-message">Start new conversation or sign in to show previous conversations</div>
+          <div class="title-message">No Conversations</div>
         </div>
       {{/each}}
     {{/if}}
   </div>
-
 </template>

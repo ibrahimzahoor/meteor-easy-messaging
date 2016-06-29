@@ -1,0 +1,5 @@
+<template name="ConversationMessage">
+  <div class="chat_bubble {{#if isSent}} sent sent-styled {{else}} recieved recieved-styled {{/if}}">
+		{{message.body}}
+	</div>
+</template>
