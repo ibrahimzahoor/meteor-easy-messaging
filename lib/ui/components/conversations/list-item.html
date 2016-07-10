@@ -4,7 +4,8 @@
     <div class="active_chats_card">
       <img class="contact_thumbnail" src="/images/placeholder.png">
   		<div class="active_chat_details">
-  			<span class="contact_title {{participant.availibilityStatus}}">{{participant.user.username}} </span>
+        <!-- {{participant.availibilityStatus}} -->
+  			<span class="contact_title">{{participant.user.username}} </span>
   			<br>
   			<span class="last_message">{{trimLastMessage conversation.lastMessage.body}}</span>
         {{#if conversation.isUnread }}

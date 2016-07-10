@@ -1,0 +1,6 @@
+<template name="NotificationBadge">
+  <!-- {{getPublishedCount "unread-messages-count"}} -->
+  {{#if unreadMessagesCount}}
+    <span class="bubble-notify">{{unreadMessagesCount}}</span>
+  {{/if}}
+</template>

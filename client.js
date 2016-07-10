@@ -20,6 +20,10 @@ import './lib/ui/components/conversations/new.js'
 import './lib/ui/components/conversations/reply.js'
 import './lib/ui/components/conversations/show.js'
 
+import './lib/ui/components/general/notification-badge.js'
+
 import './lib/ui/lib/helpers.js'
 
 // export { EasyMessaging };
+
+// Meteor.subscribe("unreadMessages");
