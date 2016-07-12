@@ -1,5 +1,4 @@
 <template name="ConversationListItem">
-
   <a href="{{pathFor '/conversation/:id' id=conversation._id}}">
     <div class="active_chats_card">
       <img class="contact_thumbnail" src="/images/placeholder.png">
@@ -14,10 +13,7 @@
         {{#if participant.isTyping}}
           <span class="last_message">typingg.....</span>
         {{/if}}
-
-
   		</div>
     </div>
 	</a>
-
 </template>

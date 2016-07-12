@@ -1,0 +1,17 @@
+<template name="ConversationShowPage">
+  <div id="show-page" class="show-page-styled">
+
+    <div id="chat_title">
+  		<i id="nav" class="fa fa-bars"></i>
+      <!-- {{recipient.availibilityStatus}} -->
+  		<h2 class="">{{recipient.user.username}}</h2>
+  	</div>
+
+    <div id="chat_history">
+      {{> ConversationMessages conversationId = conversationId}}
+    </div>
+
+    {{> ConversationReply conversationId = conversationId}}
+
+  </div>
+</template>

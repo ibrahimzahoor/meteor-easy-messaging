@@ -1,4 +1,4 @@
-/*#chat_history {
+#chat_history {
 	display: block;
 	height: calc(100% - 100px);
 	width: 100%;
@@ -53,4 +53,4 @@ h2.online::after {
 	#nav {
 		display: inline-block;
 	}
-}*/
+}

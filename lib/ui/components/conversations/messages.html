@@ -1,0 +1,21 @@
+<template name="ConversationMessages">
+  {{#if Template.subscriptionsReady}}
+    {{#each message in messages}}
+      {{> ConversationMessage message=message}}
+    {{else}}
+
+      <!-- TODO: No Message Template -->
+      <div class="wrapper-message">
+        <div class="title-message">No Messages</div>
+      </div>
+
+    {{/each}}
+  {{else}}
+
+    <!-- TODO: Loading/No Message template -->
+    <div class="wrapper-message">
+      <div class="title-message">Loading...</div>
+    </div>
+    
+  {{/if}}
+</template>

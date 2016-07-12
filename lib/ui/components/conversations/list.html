@@ -1,14 +1,21 @@
 <template name="ConversationList">
-  <div id="active_chats">
-    {{#if conversationsListReady}}
-      {{#each conversationListItem in conversationsList}}
-        {{> ConversationListItem conversation = conversationListItem}}
-      {{else}}
-        <!-- TODO: making a separate template for dummy content -->
-        <div class="wrapper-message">
-          <div class="title-message">No Conversations</div>
-        </div>
-      {{/each}}
-    {{/if}}
-  </div>
+  {{#if Template.subscriptionsReady}}
+    {{#each conversation in conversations}}
+      {{> ConversationListItem conversation = conversation}}
+    {{else}}
+
+      <!-- TODO: making a separate template for dummy content -->
+      <div class="wrapper-message">
+        <div class="title-message">No Conversations</div>
+      </div>
+
+    {{/each}}
+  {{else}}
+
+    <!-- TODO: Loading template -->
+    <div class="wrapper-message">
+      <div class="title-message">Loading...</div>
+    </div>
+
+  {{/if}}
 </template>
