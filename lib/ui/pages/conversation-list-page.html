@@ -1,3 +1,16 @@
 <template name="ConversationListPage">
-  {{> ConversationList}}
+  <div class="container">
+    <div id="message-filter">
+      <select id="js-list-select">
+        <option value="all" selected="">All Messages</option>
+        <option value="unread">Unread Messages</option>
+        <option value="starred">Starred Messages</option>
+        <option value="archived">Archived Messages</option>
+      </select>
+    </div>
+
+    <div id="message-container">
+      {{> ConversationList listType=(listType)}}
+    </div>
+  </div>
 </template>
