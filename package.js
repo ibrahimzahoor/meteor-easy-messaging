@@ -1,6 +1,6 @@
 Package.describe({
   name: 'ibrahimzahoor:easy-messaging',
-  version: '0.3.0',
+  version: '0.3.2',
   summary: 'Built on socialize:messaging, provide full messaging kit',
   git: 'https://github.com/ibrahimzahoor/easy-messaging.git',
   documentation: 'README.md'
@@ -9,6 +9,10 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.3.3');
   api.use(['ecmascript', 'check', 'underscore', 'templating', 'reactive-dict']);
+  // api.imply([
+  //   'socialize:messaging@0.5.1',
+  //   'socialize:user-model@0.1.7'
+  // ]);
   api.use([
     'socialize:messaging@0.5.1',
     'socialize:user-model@0.1.7',
